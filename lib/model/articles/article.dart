@@ -12,6 +12,16 @@ class Article{
   bool? featured;
   List<Launches>? launches;
   List? events;
+  bool favStatus=false;
+
+  bool get Fav {
+    return favStatus;
+  }
+
+  // Setter method
+  set Fav(bool value) {
+    favStatus = value;
+  }
 
   Article(
       {this.id,

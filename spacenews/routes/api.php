@@ -20,7 +20,7 @@ Route::group(['middleware' => 'auth:sanctum'], function ($router) {
     Route::get('user',[UserController::class,'getUsers']);
     Route::get('user/{id}',[UserController::class,'getUsersById']);
     Route::post('user',[UserController::class,'updateUser']);
-
+    Route::get('favorite/{id}',[FavoriteController::class,'getFavourite']);
     Route::post('favorite',[FavoriteController::class,'addFavorite']);
     Route::post('favorite/delete',[FavoriteController::class,'deleteFavorite']);
 });

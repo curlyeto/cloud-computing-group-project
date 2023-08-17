@@ -10,6 +10,7 @@ import 'package:space_news/view/homepage.dart';
 import 'package:space_news/view/profilepage.dart';
 import 'package:space_news/view/reportpage.dart';
 import 'package:space_news/viewmodel/blogviewmodel.dart';
+import 'package:space_news/viewmodel/favouriteviewmodel.dart';
 import 'package:space_news/viewmodel/homeviewmodel.dart';
 import 'package:space_news/viewmodel/reportviewmodel.dart';
 
@@ -30,6 +31,7 @@ void main() async{
           ChangeNotifierProvider<HomeViewModel>( create:(context)=>HomeViewModel(),),
           ChangeNotifierProvider<BlogViewModel>( create:(context)=>BlogViewModel(),),
           ChangeNotifierProvider<ReportViewModel>( create:(context)=>ReportViewModel(),),
+          ChangeNotifierProvider<FavouriteViewModel>( create:(context)=>FavouriteViewModel(),),
         ],
         child: const BottomNavigationBarExampleApp(),
       )

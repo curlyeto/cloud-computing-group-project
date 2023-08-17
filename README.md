@@ -1,6 +1,6 @@
 # space_news
 
-A new Flutter project.
+Space news project build backend with laravel framewok, mobile application with flutter. Laravel project source code is inside to spacenews folder.
 
 ## Getting Started
 
